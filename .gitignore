@@ -1,0 +1,17 @@
+# gitignore for c++ projects
+```
+# idea
+.idea
+.ccls-cache
+
+# build
+[Bb]uild
+cmake-build-*/
+
+# tmp files
+*~
+
+# vim
+[._]*.sw[a-p]
+tags
+```

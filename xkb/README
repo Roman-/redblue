@@ -1,0 +1,3 @@
+# Making it work with xkb
+
+xkb is painful and buggy. To make Shift+BLUE+a behave the same way as shift+left, the RedirectKey action is used (see the symbols file). But autorepeat doesn't work in this case regardless of whether `autorepeat=yes` is set in xkb files. So I've added the script that sets autorepeat for alphanumeric keys to the Ubuntu startup.

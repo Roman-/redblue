@@ -1,0 +1,341 @@
+[
+  {
+    "backcolor": "#ffebfb",
+    "name": "rog redblue halmak",
+    "css": ".keylabel8 {\n    font-weight: bold;\n}\n.keylabel0 {\n    font-size: 0.5em;\n    visibility: hidden;/**/\n}\n\n.keylabel5, .keylabel3 {\n    font-size: 0.6em;\n}\n\n.keylabel {\n    font-family: 'Courier New', monospace;\n}"
+  },
+  [
+    {
+      "x": 2.1,
+      "c": "#dfdfdf",
+      "g": true,
+      "sm": "cherry",
+      "a": 7,
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "<i class='kb kb-Unicode-Lock-Closed-1'></i>",
+    {
+      "x": 0.40000000000000036,
+      "g": false,
+      "f": 7,
+      "w": 8,
+      "h": 0.7,
+      "d": true
+    },
+    "<i class='kb kb-Symbol-Keyboard'>&nbsp;&nbsp;</i>redblue halmak"
+  ],
+  [
+    {
+      "y": -0.19999999999999996,
+      "g": true,
+      "f": 3,
+      "h": 0.7
+    },
+    "",
+    {
+      "x": 0.3500000000000001,
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "x": 0.15000000000000036,
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "x": 0.40000000000000036,
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    "",
+    {
+      "h": 0.7
+    },
+    ""
+  ],
+  [
+    {
+      "y": -0.34999999999999987,
+      "t": "#9c8c8c\n#0015e6\n\n\n\n\n\n\n\n#000000",
+      "g": false,
+      "a": 4
+    },
+    "\n<i class='fa fa-camera'></i>\n\n\n\n\n\n\n\nЁ",
+    "141…\n<i class='kb kb-Multimedia-Mute-1'></i>\n\n\n\n\n\n\n\n1",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n\n#686868\n\n\n\n\n#000000"
+    },
+    "fpmk2@…\n<i class='fa fa-volume-down'></i>\n\n\n<i class='fa fa-backward'></i>prev\n\n\n\n\n2",
+    "\n<i class='kb kb-Multimedia-Play-Pause'></i>\n\n\n<i class='fa fa-stop'></i>stop\n\n\n\n\n3",
+    "\n<i class='fa fa-volume-up'></i>\n\n\nnext<i class='fa fa-forward'></i>\n\n\n\n\n4",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n\n\n\n\n\n\n#000000"
+    },
+    "585971374\n<i class='fa fa-forumbee'></i>\n\n\n\n\n\n\n\n5",
+    {
+      "t": "#9c8c8c\n\n\n\n\n\n\n\n\n#000000"
+    },
+    "645446\n\n\n\n\n\n\n\n\n6",
+    "763008062\n\n\n\n\n\n\n\n\n7",
+    {
+      "t": "#000000",
+      "a": 7
+    },
+    "8",
+    {
+      "t": "#9c8c8c\n\n\n\n\n\n\n\n\n#000000",
+      "a": 4
+    },
+    "910462…\n\n\n\n\n\n\n\n\n9",
+    {
+      "t": "#000000",
+      "a": 7
+    },
+    "0",
+    "",
+    {
+      "t": "#9c8c8c\n\n\n\n\n\n\n\n\n#000000",
+      "a": 4
+    },
+    "+97158…",
+    {
+      "t": "#060606\n#0015e6\n#000000\n#ff0000\n#686868\n\n#009cab\n\n#000000\n#000000",
+      "f": 2,
+      "w": 1.9
+    },
+    "\nblue\n\nred\nred+blue\n\nshift+BLUE\n\nLEGEND"
+  ],
+  [
+    {
+      "t": "#9c8c8c\n#0015e6\n\n\n#686868\n\n\n\n\n#000000",
+      "f": 3,
+      "w": 1.5,
+      "w2": 1
+    },
+    "\n<i class='fa fa-code'></i>\n\n\n\n\n\n\n\nTab",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n\n\n\n#000000"
+    },
+    "\n<i class='kb kb-Search-2'></i>\n\n&\n<i class='fa fa-terminal'></i>run\n\n\n\n\nW",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n#009cab\n\n\n#000000"
+    },
+    "\nT<i class='fa fa-caret-left'></i>\n\n@\nT<i class='kb kb-Line-Start'></i>\n\nT<i class='fa fa-backward'></i>\n\n\nL",
+    "Roman S…\nT<i class='fa fa-times'></i>\n\n#\n5<i class='fa fa-music'></i>\n\nT<i class='fa fa-repeat'></i>\n\n\nR",
+    "r…@albe…\nT<i class='fa fa-caret-right'></i>\n\n[\nT<i class='kb kb-Line-End'></i>\n\nT<i class='fa fa-forward'></i>\n\n\nB",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n\n\n#009cab\n\n\n#000000"
+    },
+    "\n<i class='fa fa-undo'></i>\n\n^\n\n\n<i class='fa fa-repeat'></i>\n\n\nZ",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000"
+    },
+    "Спасибо…\n<i class='fa fa-arrows'></i>\n\n1",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n\n\n\n#000000"
+    },
+    "\n<i class='kb kb-Line-Start'></i>\n\n]\n<i class='fa fa-caret-left'></i>\n\n\n\n\nQ",
+    "\n<i class='kb kb-Arrows-Top-4'></i>\n\n?\n<i class='fa fa-caret-up'></i>\n\n\n\n\nU",
+    "\n<i class='kb kb-Line-End'></i>\n\n*\n<i class='fa fa-caret-right'></i>\n\n\n\n\nD",
+    "\n<i class='fa fa-refresh'></i>\n\n0\ni3<i class='fa fa-refresh'></i>\n\n\n\n\nJ",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n\n\n\n\n\n#000000"
+    },
+    "\neof\n\n'\n\n\n\n\n\n'",
+    "\n<i class='fa fa-file-o'></i>\n\n\\\n\n\n\n\n\n\\",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n\n#686868\n\n\n\n\n#000000",
+      "w": 1.4
+    },
+    "\n<i class='fa fa-list-ul'></i>\n\n\nemj\n\n\n\n\n<i class='fa fa-desktop'></i>"
+  ],
+  [
+    {
+      "w": 1.75,
+      "w2": 1
+    },
+    "\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\n\n\nc-<i class='kb kb-Unicode-DeleteRight-Big'></i>\n\n\n\n\nEsc",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n\n\n\n#000000"
+    },
+    "Silicon Oasis A…\n<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n\n!\nc-<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n\n\n\n\nS",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n#009cab\n\n\n#000000"
+    },
+    "\n<i class='fa fa-chrome'></i>\n\n+\nc-+\n\n<i class='fa fa-save'></i>\n\n\nH",
+    "National Bonds…\n<i class='fa fa-columns'></i>\n\n=\nCAPS\n\n<i class='fa fa-send'></i>\n\n\nN",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n\n\n\n#000000"
+    },
+    "t.me/rom…\n<i class='kb kb-Return-2'></i>\n\n(\nc-<i class='kb kb-Return-2'></i>\n\n\n\n\nT",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n#009cab\n\n\n#000000"
+    },
+    "\n<i class='fa fa-times'></i>\n\n{\n6<i class='fa fa-server'></i>\n\n<i class='fa fa-folder-open'></i>\n\n\n,",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n\n\n\n#000000"
+    },
+    "\n<i class='fa fa-table'></i>\n\n}\nterm-r\n\n\n\n\n.",
+    "{ab}\n<i class='fa fa-long-arrow-left'></i>\n\n)\nc-<i class='fa fa-caret-left'></i>\n\n\n\n\nA",
+    "\n<i class='fa fa-long-arrow-down'></i>\n\n_\nc-<i class='fa fa-caret-down'></i>\n\n\n\n\nE",
+    "{goo}\n<i class='fa fa-long-arrow-up'></i>\n\n:\nc-<i class='fa fa-caret-up'></i>\n\n\n\n\nO",
+    "2452(INN)\n<i class='fa fa-long-arrow-right'></i>\n\n;\nc-<i class='fa fa-caret-right'></i>\n\n\n\n\nI",
+    "\n<i class='fa fa-folder-open-o'></i>\n\n-\nc-–\n\n\n\n\n-",
+    {
+      "t": "#000000",
+      "a": 7,
+      "w": 2.15
+    },
+    "<i class='kb kb-Return-2'></i>"
+  ],
+  [
+    {
+      "w": 2.25,
+      "w2": 1
+    },
+    "Shift",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n\n\n\n#000000",
+      "a": 4
+    },
+    "\n<i class='kb kb-A-Square-Filled-SanSerif'></i>\n\n~\n<i class='fa fa-arrows-alt'></i>\n\n\n\n\nF",
+    "\n<i class='fa fa-cut'></i>\n\n%\nmvfl\n\n\n\n\nM",
+    "\n</i><i class='fa fa-paste'></i>\n\n`\n<i class='kb kb-logo-vim'></i>\n\n\n\n\nV",
+    "Страхов Роман А…\n<i class='fa fa-copy'></i>\n\n<\n<i class='fa fa-calculator'></i>\n\n\n\n\nC",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n\n\n\n\n\n#000000"
+    },
+    "\nT+\n\n/\n\n\n\n\n\n/",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n#686868\n\n\n\n\n#000000"
+    },
+    "{git}\naddr\n\n\"\nterm-b\n\n\n\n\nG",
+    "\n<i class='kb kb-Arrows-Bottom-4'></i>\n\n>\n<i class='fa fa-caret-down'></i>\n\n\n\n\nP",
+    "\n<i class='fa fa-calendar-o'></i>\n\n|\n<i class='fa fa-fast-backward'></i>\n\n\n\n\nX",
+    "\n<i class='fa fa-link'></i>\n\n№\n<i class='fa fa-fast-forward'></i>\n\n\n\n\nK",
+    {
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n\n\n\n\n\n#000000"
+    },
+    "\n<i class='fa fa-edit'></i>\n\n$\n\n\n\n\n\nY",
+    {
+      "t": "#000000",
+      "a": 7,
+      "w": 2.65
+    },
+    "Shift"
+  ],
+  [
+    {
+      "w": 1.25,
+      "w2": 1
+    },
+    "Ctrl",
+    {
+      "g": true
+    },
+    "Fn",
+    {
+      "t": "#9c8c8c\n\n\n\n\n\n\n\n\n#000000",
+      "g": false,
+      "a": 4
+    },
+    "<i class='fa fa-circle'></i>\n\n\n\n\n\n\n\n\nAlt",
+    {
+      "c": "#adb9ff",
+      "t": "#9c8c8c\n#0015e6\n\n\n\n\n\n\n\n#000000"
+    },
+    "\n<i class='fa fa-circle'></i>\n\n\n\n\n\n\n\nBLUE",
+    {
+      "c": "#dfdfdf",
+      "t": "#9c8c8c\n#0015e6\n\n#ff0000\n\n\n\n\n\n#000000",
+      "w": 5,
+      "w2": 1
+    },
+    "\nen/ru\n\nspc\n\n\n\n\n\nSpace",
+    {
+      "c": "#ffadad",
+      "t": "#9c8c8c\n\n\n#ff0000\n\n\n\n\n\n#000000"
+    },
+    "\n\n\n<i class='fa fa-circle'></i>\n\n\n\n\n\nRED",
+    {
+      "c": "#dfdfdf",
+      "t": "#000000",
+      "a": 7
+    },
+    "i3",
+    "",
+    {
+      "x": 0.8499999999999996,
+      "g": true,
+      "w": 0.9,
+      "h": 0.75
+    },
+    ""
+  ],
+  [
+    {
+      "y": -0.25,
+      "x": 12.2,
+      "w": 0.9,
+      "h": 0.75
+    },
+    "",
+    {
+      "w": 0.9,
+      "h": 0.75
+    },
+    "",
+    {
+      "w": 0.9,
+      "h": 0.75
+    },
+    ""
+  ]
+]

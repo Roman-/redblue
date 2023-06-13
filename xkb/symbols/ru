@@ -1,0 +1,836 @@
+// RU compatible with Halmak-redblue
+
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+    name[Group1] = "qwerty but semihalmak";
+
+    // rog: bottom row of modifiers
+    // left alt = BLUE (navigation), right alt = RED (symbols)
+    include "level3(lalt_switch)"
+    include "level5(ralt_switch)"
+
+    key.type[Group1] = "ONE_LEVEL";
+    key <ESC>  { [ Caps_Lock ] };
+    key <PRSC> { [ Super_R ] };
+    key <BKSP> { [ BackSpace ] };
+    key <LWIN> { [ Alt_L ] };
+    key <SUPR> { [ Alt_L ] };
+
+    key.type[Group1] = "EIGHT_LEVEL";
+    key <SPCE> { [ space, space, F19, F20, space, space, space, space] };
+    key <TAB> { [ Tab, Tab, Tab, Tab, U2022, U25E6, Tab, Tab ] };
+
+    key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
+    // Mods: [ None,   Shift,      BLUE,     Shift+BLUE,
+    //         RED,    Shift+RED,  RED+BLUE, Shift+RED+BLUE ]
+
+
+    // fake keys for ctrl-x, ctrl-c, ctrl-v, ctrl-z etc
+    key <KP0> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ a, a, a, a, a, a, a, a ] };
+    key <KP1> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ c, c, c, c, c, c, c, c ] };
+    key <KP2> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ d, d, d, d, d, d, d, d ] };
+    key <KP3> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ f, f, f, f, f, f, f, f ] };
+    key <KP4> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ k, k, k, k, k, k, k, k ] };
+    key <KP5> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ l, l, l, l, l, l, l, l ] };
+    key <KP6> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ n, n, n, n, n, n, n, n ] };
+    key <KP7> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ o, o, o, o, o, o, o, o ] };
+    key <KP8> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ r, r, r, r, r, r, r, r ] };
+    key <KP9> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ s, s, s, s, s, s, s, s ] };
+    key <KPDV>{ type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ t, t, t, t, t, t, t, t ] };
+    key <KPMU>{ type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ v, v, v, v, v, v, v, v ] };
+    key <KPAD>{ type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ w, w, w, w, w, w, w, w ] };
+    key <KPSU>{ type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ x, x, x, x, x, x, x, x ] };
+    key <KPEN>{ type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [ z, z, z, z, z, z, z, z ] };
+
+    // row #0 (numbers)
+
+    // `
+    key <TLDE> {
+        type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC",
+        symbols[Group1] = [
+          Cyrillic_io, Cyrillic_IO, grave, asciitilde,
+          grave, asciitilde, grave, asciitilde ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 1 -> 1
+    key <AE01> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            1, exclam, 1, 1,
+            1, U00B9, 1, 1
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 2 -> 2
+    key <AE02> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            2, at, 2, 2,
+            2, U00B2, 2, 2
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 3 -> 3
+    key <AE03> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            3, numbersign, 3, 3,
+            3, U00B3, 3, 3
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 4 -> 4
+    key <AE04> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            4, dollar, 4, 4,
+            4, U2074, 4, 4
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 5 -> 5
+    key <AE05> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            5, percent, 5, 5,
+            5, U2075, 5, 5
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 6 -> 6
+    key <AE06> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            6, asciicircum, 6, 6,
+            6, U2076, 6, 6
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 7 -> 7
+    key <AE07> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            7, ampersand, 7, 7,
+            7, U2077, 7, 7
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 8 -> 8
+    key <AE08> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            8, asterisk, 8, 8,
+            8, U2078, 8, 8
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 9 -> 9
+    key <AE09> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            9, parenleft, 9, 9,
+            9, U2079, 9, 9
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // 0 -> 0
+    key <AE10> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            0, parenright, 0, 0,
+            0, U2070, 0, 0
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // minus -> minus
+    key <AE11> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            minus, underscore, minus, minus,
+            minus, minus, minus, minus
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // equal -> equal
+    key <AE12> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            equal, plus, equal, equal,
+            equal, U1F606, equal, equal
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // row #1
+
+    // q -> w
+    key <AD01> {
+        type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC",
+        symbols[Group1] = [
+            Cyrillic_shorti, Cyrillic_SHORTI, q, q,
+            ampersand, U1F609, w, w
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // find (ctrl+f)
+          RedirectKey(key=<KP3>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KP3>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // w -> l
+    key <AD02> {
+        type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC",
+        symbols[Group1] = [
+            Cyrillic_tse, Cyrillic_TSE, l, l,
+            at, U1F525, l, l
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // tab left (ctrl+PGUP)
+          RedirectKey(key=<PGUP>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<PGUP>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          // tab first (ctrl+1)
+          RedirectKey(key=<AE01>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<AE01>, clearmods=Mod3+Mod5, mods=Shift+Control)
+        ]
+    };
+
+    // e -> r
+    key <AD03> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_u, Cyrillic_U, r, r,
+            numbersign, U221A, r, r
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // tab close (ctrl+w), undo tab close (ctrl+shift+t)
+          RedirectKey(key=<KPAD>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KPDV>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // r -> b
+    key <AD04> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_ka, Cyrillic_KA, r, r,
+            bracketleft, b, b, b
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // tab right (ctrl+PGDN)
+          RedirectKey(key=<PGDN>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<PGDN>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          // tab last (ctrl+9)
+          RedirectKey(key=<AE09>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<AE09>, clearmods=Mod3+Mod5, mods=Shift+Control)
+        ]
+    };
+
+    // t -> z
+    key <AD05> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_ie, Cyrillic_IE, t, t,
+            asciicircum, U1F929, z, z
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // undo
+          RedirectKey(key=<KPEN>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KPEN>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // y -> nothing (used to be semicolon in original halmak)
+    key <AD06> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_en, Cyrillic_EN, y, y,
+            1, U1F642, U1F60B, U1F60A
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // u -> q
+    key <AD07> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_ghe, Cyrillic_GHE, u, u,
+            bracketright, U1F937, q, q
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // home
+          RedirectKey(key=<HOME>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<HOME>, clearmods=Mod3+Mod5, mods=Shift),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // i -> u
+    key <AD08> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_sha,      Cyrillic_SHA, i, i,
+            question, U1F44D, u, u
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // page up
+          RedirectKey(key=<PGUP>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<PGUP>, clearmods=Mod3+Mod5, mods=Shift),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // o -> d
+    key <AD09> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_shcha,    Cyrillic_SHCHA, o, o,
+            asterisk, U1F606, d, d
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // end
+          RedirectKey(key=<END>,  clearmods=Mod3+Mod5),
+          RedirectKey(key=<END>,  clearmods=Mod3+Mod5, mods=Shift),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // p -> j
+    key <AD10> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_ze, Cyrillic_ZE, p, p,
+            0, j, j, j
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // previous state / previous cmd (aka Refresh) = ctrl+R
+          RedirectKey(key=<KP8>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KP8>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // bracketleft -> apostrophe
+    key <AD11> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_ha, Cyrillic_HA, apostrophe, apostrophe,
+            apostrophe, U2713, apostrophe, apostrophe
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // c-d (send EOF)
+          RedirectKey(key=<KP2>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KP2>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // bracketright -> backslash
+    key <AD12> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_hardsign, Cyrillic_HARDSIGN, backslash, backslash,
+            backslash, U2717, backslash, backslash
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // c-n (new)
+          RedirectKey(key=<KP6>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KP6>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // row #2
+
+    // CAPS -> escape / delete
+    key <CAPS> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Escape, Escape, Escape, Escape,
+            Escape, Escape, Escape, Escape
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // delete
+          RedirectKey(key=<DELE>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<DELE>, clearmods=Mod3+Mod5),
+          NoAction(), NoAction(),
+          RedirectKey(key=<DELE>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<DELE>, clearmods=Mod3+Mod5)
+        ]
+    };
+
+    // a -> s
+    key <AC01> {
+        type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC",
+        symbols[Group1] = [
+            Cyrillic_ef, Cyrillic_EF, a, a,
+            exclam, U2260, s, s
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // backspace
+          RedirectKey(key=<BKSP>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<BKSP>, clearmods=Mod3+Mod5),
+          NoAction(), NoAction(),
+          RedirectKey(key=<BKSP>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<BKSP>, clearmods=Mod3+Mod5)
+        ]
+    };
+
+    // s -> h
+    key <AC02> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_yeru, Cyrillic_YERU, s, s,
+            plus, U00B1, h, h
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), RedirectKey(key=<KP9>, clearmods=Shift+Mod3+Mod5, mods=Control),
+          NoAction(), NoAction(),
+          // zoom in (ctrl+=)
+          RedirectKey(key=<AE12>, clearmods=Shift+Mod3+Mod5, mods=Control),
+          NoAction()
+        ]
+    };
+
+    // d -> n
+    key <AC03> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_ve, Cyrillic_VE, d, d,
+            equal, U2248, n, n
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // f -> t
+    key <AC04> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_a, Cyrillic_A, f, f,
+            parenleft, U1F914, t, t
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // blue+f = enter
+          RedirectKey(key=<RTRN>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<RTRN>, clearmods=Mod3+Mod5),
+          NoAction(), NoAction(),
+          RedirectKey(key=<RTRN>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<RTRN>, clearmods=Mod3+Mod5, mods=Control)
+        ]
+    };
+
+    // g -> comma
+    key <AC05> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_pe, Cyrillic_PE, g, g,
+            braceleft, U00B0, comma, comma
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // h -> period
+    key <AC06> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_er, Cyrillic_ER, h, h,
+            braceright, U2026, period, period
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // j -> a
+    key <AC07> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_o,        Cyrillic_O, j, j,
+            parenright, U2190, a, a
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          RedirectKey(key=<LEFT>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<LEFT>, clearmods=Mod3+Mod5),
+          NoAction(), NoAction(),
+          RedirectKey(key=<LEFT>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<LEFT>, clearmods=Mod3+Mod5, mods=Shift+Control)
+        ]
+    };
+
+    // k -> e
+    key <AC08> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_el,       Cyrillic_EL, k, k,
+            underscore, U2193, e, e
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          RedirectKey(key=<DOWN>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<DOWN>, clearmods=Mod3+Mod5),
+          NoAction(), NoAction(),
+          RedirectKey(key=<DOWN>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<DOWN>, clearmods=Mod3+Mod5, mods=Shift+Control)
+        ]
+    };
+
+    // l -> o
+    key <AC09> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_de,       Cyrillic_DE, l, l,
+            colon, U2191, o, o
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          RedirectKey(key=<UP>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<UP>, clearmods=Mod3+Mod5),
+          NoAction(), NoAction(),
+          RedirectKey(key=<UP>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<UP>, clearmods=Mod3+Mod5, mods=Shift+Control)
+        ]
+    };
+
+    // semicolon -> i
+    key <AC10> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_zhe, Cyrillic_ZHE, semicolon, semicolon,
+            semicolon, U2192, i, i
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          RedirectKey(key=<RGHT>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<RGHT>, clearmods=Mod3+Mod5),
+          NoAction(), NoAction(),
+          RedirectKey(key=<RGHT>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<RGHT>, clearmods=Mod3+Mod5, mods=Shift+Control)
+        ]
+    };
+
+    // apostrophe -> minus
+    key <AC11> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_e, Cyrillic_E, minus, minus,
+            minus, emdash, minus, minus
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // c-o (open)
+          RedirectKey(key=<KP7>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KP7>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          // zoom out (ctrl+-)
+          RedirectKey(key=<AE11>, clearmods=Shift+Mod3+Mod5, mods=Control),
+          NoAction()
+        ]
+    };
+
+    // backslash -> nothing (actions in i3)
+    key <AC12> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_ef, Cyrillic_EF, Cyrillic_ef, Cyrillic_ef,
+            Cyrillic_ef, Cyrillic_ef, Cyrillic_ef, Cyrillic_ef
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // row 3
+
+    // z -> f
+    key <AB01> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_ya, Cyrillic_YA, z, z,
+            asciitilde, U1F926, f, f
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // select all
+          RedirectKey(key=<KP0>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KP0>, clearmods=Mod3+Mod5, mods=Control+Shift),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // x -> m
+    key <AB02> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_che, Cyrillic_CHE, x, x,
+            percent, U00B5, m, m
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // cut (ctrl+x)
+          RedirectKey(key=<KPSU>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KPSU>, clearmods=Mod3+Mod5, mods=Control+Shift),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // c -> v
+    key <AB03> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_es, Cyrillic_ES, c, c,
+            grave, v, v, v
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // copy (ctrl+c)
+          RedirectKey(key=<KPMU>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KPMU>, clearmods=Mod3+Mod5, mods=Control+Shift),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // v -> c
+    key <AB04> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_em, Cyrillic_EM, v, v,
+            less, U00A9, c, c
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // paste (ctrl+v)
+          RedirectKey(key=<KP1>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KP1>, clearmods=Mod3+Mod5, mods=Control+Shift),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // b -> slash
+    key <AB05> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_i,  Cyrillic_I, b, b,
+            slash, U00F7, slash, slash
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // new tab (ctrl t)
+          RedirectKey(key=<KPDV>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KPDV>, clearmods=Mod3+Mod5, mods=Control+Shift),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // n -> g
+    key <AB06> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_te,       Cyrillic_TE, n, n,
+            quotedbl, U1F631, g, g
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // addr (ctrl+L)
+          RedirectKey(key=<KP5>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KP5>, clearmods=Mod3+Mod5, mods=Control+Shift),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // m -> p
+    key <AB07> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_softsign, Cyrillic_SOFTSIGN, m, m,
+            greater, U1F389, m, m
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          RedirectKey(key=<PGDN>, clearmods=Mod3+Mod5),
+          RedirectKey(key=<PGDN>, clearmods=Mod3+Mod5),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // comma -> x
+    key <AB08> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_be,       Cyrillic_BE, comma, comma,
+            bar, U1F641, x, x
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // period -> k
+    key <AB09> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Cyrillic_yu,       Cyrillic_YU, period, period,
+            numerosign, k, k, k
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          // c-k (insert link)
+          RedirectKey(key=<KP4>, clearmods=Mod3+Mod5, mods=Control),
+          RedirectKey(key=<KP4>, clearmods=Mod3+Mod5, mods=Shift+Control),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+
+    // slash -> y
+    key <AB10> {
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            period, comma, slash, slash,
+            dollar, y, y, y
+        ],
+        actions[Group1] = [
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction(),
+          NoAction(), NoAction()
+        ]
+    };
+};
