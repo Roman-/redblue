@@ -1,4 +1,4 @@
-# Redblue semiergonomic Halmak keyboard layout
+# Red/blue semiergonomic Halmak keyboard layout
 Semiergonomic because when your keyboard is embedded in a rectangle, the word "ergonomic" can't be used without irony.
 
 **Video overview**: [https://youtu.be/92pRAQeRIak](https://youtu.be/92pRAQeRIak)
