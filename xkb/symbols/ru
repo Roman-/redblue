@@ -477,10 +477,10 @@ xkb_symbols "basic" {
           NoAction(), NoAction(),
           // backspace
           RedirectKey(key=<BKSP>, clearmods=Mod3+Mod5),
-          RedirectKey(key=<BKSP>, clearmods=Mod3+Mod5),
+          NoAction(),
           NoAction(), NoAction(),
           RedirectKey(key=<BKSP>, clearmods=Mod3+Mod5, mods=Control),
-          RedirectKey(key=<BKSP>, clearmods=Mod3+Mod5)
+          NoAction()
         ]
     };
 
